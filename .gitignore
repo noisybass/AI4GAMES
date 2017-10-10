@@ -1,0 +1,5 @@
+# Ignore buildtree:
+_build/
+
+# Ignore dependencies:
+[Ll]ibs/
