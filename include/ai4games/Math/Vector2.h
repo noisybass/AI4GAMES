@@ -1,5 +1,5 @@
-#ifndef LOGIC_MATH_H
-#define LOGIC_MATH_H
+#ifndef AI4GAMES_MATH_H
+#define AI4GAMES_MATH_H
 
 struct Vector2
 {
@@ -36,4 +36,4 @@ float SquaredDistance(const Vector2& a, const Vector2& b);
 
 Vector2 Lerp(const Vector2& a, const Vector2& b, float t);
 
-#endif // LOGIC_MATH_H
+#endif // AI4GAMES_MATH_H
