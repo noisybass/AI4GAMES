@@ -6,6 +6,7 @@
 #include <SFML\Window\Event.hpp>
 
 #include "ai4games\Math\Vector2.h"
+#include "ai4games\FSM\FSM.h"
 
 int main(int argc, char **argv)
 {
@@ -18,6 +19,12 @@ int main(int argc, char **argv)
 	square.setPosition(window.getSize().x / 2.0f, window.getSize().y / 2.0f);
 
 	sf::Clock deltaClock;
+
+	Vector2 v{ 4, 5 };
+	v.Normalize();
+
+	std::string agent{ "hola" };
+	FSM<std::string> fsm(&agent);
 
 	while (window.isOpen())
 	{
