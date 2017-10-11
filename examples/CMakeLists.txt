@@ -12,7 +12,7 @@ set(SFML_ROOT "${CMAKE_SOURCE_DIR}/libs/SFML-2.4.2")
 find_package(SFML 2 REQUIRED network audio graphics window system)
 if(SFML_FOUND)
   include_directories(${SFML_INCLUDE_DIR})
-  target_link_libraries(ai4games Math ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
+  target_link_libraries(ai4games Math SteeringBehaviours ${SFML_LIBRARIES} ${SFML_DEPENDENCIES})
 
   ADD_CUSTOM_COMMAND (TARGET ai4games POST_BUILD
   # todo: check if debug and release folder exist
