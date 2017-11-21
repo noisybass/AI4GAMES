@@ -5,7 +5,7 @@ template <class Agent>
 class State
 {
 public:
-	~virtual State();
+	virtual ~State();
 
 	virtual void Enter(Agent* agent) = 0;
 	virtual void Execute(Agent* agent) = 0;
